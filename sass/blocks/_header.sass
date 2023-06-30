@@ -1,0 +1,45 @@
+.header
+    padding: 21px 0
+    background-color: $black
+    border-bottom: 2px solid $blueDark
+    &__link
+        color: $white
+        text-decoration: none
+        margin-right: 50px
+        transition: 0.3s all
+        &:last-child
+            margin-right: 0
+        &:hover
+            color: $yellow
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__language
+        display: flex
+        align-items: center
+        cursor: pointer
+        span
+            font-size: 32px
+            color: $white
+            margin-right: 10px
+            transition: 0.3s all
+        &-text_active
+            color: $yellow!important
+        &-img
+            width: 75px
+            height: 75px
+            background: url("../icons/language.png") center (center/cover) no-repeat
+            transition: 0.3s all
+            &_active
+                background: url("../icons/language-yellow.png") center (center/cover) no-repeat
+.burger
+    display: none
+    &__stick
+        background-color: $white
+        display: block
+        width: 40px
+        height: 2px
+        margin-bottom: 6px
+        &:last-child
+            margin-bottom: 0

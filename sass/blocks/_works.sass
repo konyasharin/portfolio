@@ -1,0 +1,92 @@
+.works
+    padding-top: 140px
+    h2
+        color: $yellowLight
+        text-align: center
+        margin-bottom: 20px
+    &__wrapper
+        display: flex
+        vartical-align: top
+        justify-content: space-between
+        flex-wrap: wrap
+        position: relative
+    &__block
+        margin-top: 30px
+        position: relative
+        overflow: hidden
+        &-title
+            color: $white!important
+    &__img
+        display: block
+        height: 334px
+        width: 560px
+        border-radius: 10px
+    &__block-background
+        opacity: 0
+        position: absolute
+        top: 0
+        background-color: $blueDark
+        border-radius: 10px
+        z-index: 1
+        width: 560px
+        height: 334px
+        padding: 40px 20px
+        transition: 0.8s all
+        cursor: pointer
+        h3
+            color: $white
+            word-wrap: break-word
+            margin-top: 10px
+        &_active
+            opacity: 0.95
+            transition: 0.8s all
+    &__paragraph
+        display: flex
+        justify-content: start
+        align-items: first baseline
+    &__dot
+        height: 100%
+        span
+            margin-right: 15px
+            display: block
+            height: 25px
+            width: 25px
+            background-color: $yellow
+            border-radius: 50%
+    &__more
+        text-align: center
+        cursor: pointer
+        color: $yellow
+        text-decoration: underline
+        margin-top: 45px
+    &__click
+        position: absolute
+        right: 0
+        bottom: 0
+        transition: 0.3s all
+        &_Up
+            transition: 0.3s all
+            bottom: 10px
+        &-start
+            position: absolute
+            z-index: 2
+            left: -100px
+            top: 100px
+            animation-name: moveClick
+            animation-duration: 3s
+            animation-iteration-count: infinite
+            mix-blend-mode: difference
+            transition: 0.5s all
+@keyframes moveClick
+    0%
+        opacity: 0
+        left: -100px
+        top: 100px
+    15%
+        opacity: 1
+    90%
+        top: 200px
+        left: 150px
+    100%
+        opacity: 0
+
